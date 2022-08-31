@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $("#enquire-form").validate({
+        rules:{
+            Name:{
+                required:true,
+                minlength:3
+            },
+            Email:{
+                required:true,
+                minlength:6
+            },
+            Phone:{
+                required:true
+            },
+            Message:{
+                required:true,
+                minlength:2
+            }
+        }
+    })
+})
